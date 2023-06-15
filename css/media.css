@@ -91,6 +91,36 @@
     display: block;
   }
 
+  .header__burger::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+  }
+
+  .header__burger-line:nth-child(1)::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+  }
+
+  .header__burger-line:nth-child(3)::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+  }
+
   .address {
     font-size: 18px;
   }
