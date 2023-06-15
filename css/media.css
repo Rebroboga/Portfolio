@@ -376,6 +376,13 @@
     top: 130px;
   }
 
+  .contacts__mail:hover {
+    font-size: 22px;
+  }
+
+  .contacts__number:hover {
+    font-size: 22px;
+  }
 }
 
 /* 576px --> 320px */
@@ -521,6 +528,14 @@
     font-size: 14px;
   }
 
+  .contacts__mail:hover {
+    font-size: 14px;
+  }
+
+  .contacts__number:hover {
+    font-size: 15px;
+  }
+
   .contacts__mail {
     font-size: 12px;
     margin-bottom: 20px;
@@ -567,6 +582,8 @@
     
   }
 }
+
+/* 415px */
 
 @media (max-width: 415px) {
   .header__nav {
