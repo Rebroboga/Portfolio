@@ -118,6 +118,10 @@ body {
   display: none;
 }
 
+.about-me__language-visible {
+  display: none;
+}
+
 /* main__information */
 
 .about-me__information {
