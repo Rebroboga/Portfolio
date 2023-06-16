@@ -118,6 +118,14 @@ body {
   display: none;
 }
 
+.about-me__language {
+  transform: rotate(270deg);
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
 .about-me__language-visible {
   display: none;
 }
@@ -151,13 +159,6 @@ body {
   color: var(--color-dark);
   font-size: 18px;
   line-height: 22px;
-}
-
-.about-me__language {
-  transform: rotate(270deg);
-  padding: 0;
-  list-style: none;
-  display: flex;
 }
 
 .about-me__ru {

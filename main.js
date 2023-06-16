@@ -7,30 +7,40 @@ new Accordion('.accordion__list', {
   activeClass: 'accordion--active'
 });
 
-let wrap = document.querySelector('.about-me__translate-en');
+let wrap = document.querySelectorAll('.about-me__translate-en');
 let about = document.querySelectorAll('.about-me__text');
-let color = document.querySelector('.about-me__translate-ru');
+let color = document.querySelectorAll('.about-me__translate-ru');
 let block = document.querySelector('.achievements__image');
 let fixed = document.querySelectorAll('.accordion__control');
 
+wrap.forEach(function(el) {
+  el.addEventListener('click', function() {
 
-wrap.addEventListener('click', function() {
+    el.classList.add('color--active');
 
-  wrap.classList.add('color--active');
+    color.forEach(function(e) {
+      
+      e.classList.remove('color--active')
 
-  color.classList.remove('color--active')
-
-  about.forEach(function(e) {
-    e.classList.add('wrap--active');
+      about.forEach(function(elem) {
+        elem.classList.add('wrap--active')
+      })
+    })
   })
 })
 
-color.addEventListener('click', function() {
 
-  wrap.classList.remove('color--active');
-  wrap.classList.remove('active');
+color.forEach(function(el) {
+  el.addEventListener('click', function() {
 
-  color.classList.add('color--active');
+    wrap.forEach(function(e) {
+      e.classList.remove('color--active');
+      e.classList.remove('active');
+    })
+    
+
+    el.classList.add('color--active');
+  })
 })
 
 fixed.forEach(item => {
